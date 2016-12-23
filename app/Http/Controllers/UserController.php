@@ -37,7 +37,9 @@ class UserController extends Controller
             'email' => $request->email,
             'password' => $request->password,
         ]);
-       session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
+        Auth::login($user);
+        session()->flash('success', '欢迎，您将在这里开启一段新的旅程~');
         return redirect()->route('users.show', [$user]);
      }
+     
 }

@@ -3,6 +3,8 @@
   <head>
     <title>@yield('title', 'Sample App') </title>
     <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript" src="/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   </head>
   <body>
     @include('layouts._header')

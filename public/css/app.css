@@ -5765,6 +5765,11 @@ p {
   font-size: 1.1em;
   line-height: 1.7em; }
 
+#logout {
+  cursor: default; }
+  #logout:hover {
+    background-color: transparent; }
+
 /* header */
 .navbar-inverse {
   background-color: #3c3e42; }
